@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Posts: practice CRUD operations</title>
+</head>
+
+<body>
+  <div id="pop-up">
+    <div class="pop-up-header">
+      <h2 id="pop-up-title"></h2>
+      <button type="text" id="pop-up-button">&#215;</button>
+    </div>
+    <p id="pop-up-description"></p>
+  </div>
+
+  <div id="loader-wrapper">
+    <div class="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <header>
+    Posts from JSON placeholder.
+  </header>
+  <main>
+    <form id="form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" placeholder="Enter title">
+      <label for="body">Description:</label>
+      <input type="text" id="body" name="body" placeholder="Enter description">
+      <p id="error"></p>
+      <button type="submit">Send</button>
+    </form>
+    <section id="posts">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
